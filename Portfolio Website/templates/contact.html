@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <h2>Portfolio</h2>
+
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="content">
+
+    <h1>Contact Me</h1>
+
+    <form method="POST">
+
+        <input type="text"
+               name="username"
+               placeholder="Username"
+               required>
+
+        <input type="email"
+               name="email"
+               placeholder="Email"
+               required>
+
+        <textarea name="message"
+                  placeholder="Message"
+                  required></textarea>
+
+        <button type="submit">Send</button>
+
+    </form>
+
+    <p>{{ message }}</p>
+
+</section>
+
+<footer>
+    <p>© 2026 Nikhil Portfolio</p>
+</footer>
+
+</body>
+</html>

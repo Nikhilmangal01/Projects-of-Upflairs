@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <h2>Portfolio</h2>
+
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="content">
+
+    <h1>Projects</h1>
+
+    <div class="project-card">
+        <h3>Student Management System</h3>
+        <p>Flask + SQLite Project</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Weather App</h3>
+        <p>API Based Flask Application</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>HTML CSS Flask Portfolio</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Nikhil Portfolio</p>
+</footer>
+
+</body>
+</html>
